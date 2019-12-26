@@ -92,10 +92,29 @@ KKK.m
              
              @end
 
+
 main.m
 
 
-
-
-
-        
+           #import<Foundation/Foundation.h>
+           #import"QQQ.h"
+           #import"KKK.h"
+           
+           int main(int argc, const char * argv[])
+           {
+           
+             id eee; ------> 可以呼叫任何類別的型態容器
+             
+             QQQ *fff=[[QQQ alloc]init];
+             eee = fff;
+             [eee setP];
+             [eee printP];
+             
+             KKK *iii=[[KKK alloc]init];
+             eee = iii;
+             [eee setP];
+             [eee printP];             
+             
+              return 0;       
+           
+           }      

@@ -19,21 +19,78 @@ id 類型的定義方式
 
 QQQ.h
 
-
-
-QQQ.m
-
-
+                #import<Foundation/Foundation.h>
+                
+                @interface QQQ: NSObject
+                {
+                
+                  NSString *p;
+                
+                }
+                
+                -(void)setP;
+                -(void)printP;
+                
+                @end
 
 KKK.h
 
+               #import <Foundtaion/Fundation.h>
+               
+               @interface KKK: NSObject
+               {
+               
+                  NSString *p;
+               
+               }
+               
+               -(void)setP;
+               -(void)printP;
+               
+               @end
 
+QQQ.m
+
+              #import"QQQ.h"
+              
+              @implementation QQQ
+              -(void)setP
+              {
+              
+                 p=@"QQQ";
+              
+              }
+              
+              -(void)printP
+              {
+              
+                NSlog(@"%@", p);
+              
+              }
+              
+              @end
 
 KKK.m
 
-
-
-
+              #import"KKK.h"
+              
+              @implementation KKK
+              
+              -(void)setP
+              {
+              
+                p=@"KKK"
+              
+              }
+              
+              -(void)printP
+              {
+              
+                NSLog(@"%@", p);
+              
+              }
+             
+             @end
 
 main.m
 
